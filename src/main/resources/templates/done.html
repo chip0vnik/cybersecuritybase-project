@@ -6,6 +6,16 @@
     <body>
 
         <h1>Thank you! You have been signed up to the event!</h1>
+        
+        <p><span th:utext="${name}"></span> has been signed up</p>
+        <h2>You have entered the following data to participate to the event :</h2>
+        
+        <p>My Name is : <span th:utext="${name}"></span></p>
+        <p>My Address is : </p>
+        <ul>
+            <li th:each="add : ${address}" th:utext="${add}">address</li>
+        </ul>
+
 
     </body>
 </html>
